@@ -17,16 +17,21 @@ export default function TabBody() {
   const listRow = [];
   for (let i = 0; i < 5; i++) {
     listRow[i] = row[i].map((item) => {
-      // if (item.getMonth() !== now.getMonth()) {
-      //   item.classList.add("ui-datepicker-other-month");
-      // } else {
-      //   if (item.getDate() === now.getDate()) {
-      //     item.classList.add("ui-datepicker-today");
-      //   }
-      // };
+      if (item.getMonth() !== now.getMonth()) {
       return (
-        <td>{item.getDate()}</td>
+        <td className="ui-datepicker-other-month">{item.getDate()}</td>
       )
+      } else {
+        if (item.getDate() === now.getDate()) {
+          return (
+            <td className="ui-datepicker-today">{item.getDate()}</td>
+          )
+        } else {
+          return (
+            <td>{item.getDate()}</td>
+          )
+        }
+      } 
     })
   };
 
