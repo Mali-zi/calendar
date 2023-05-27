@@ -1,3 +1,3 @@
 # Календарь
 
-This project was bootstrapped with Create React App
+React-компонет Calendar (функциональный компонент) показывает текущую дату и текущий месяц.
