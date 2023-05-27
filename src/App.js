@@ -1,5 +1,5 @@
 import './App.css';
-import { TabBody } from './tabbody.js'
+import TabBody from './TableBody.js'
 
 const now = new Date(2017, 2, 8);
 
@@ -55,7 +55,7 @@ function Calendar({date}) {
               <th scope="col" title="Воскресенье">Вс</th>
             </tr>
           </thead>
-            <TabBody curentDate={date} />
+            <TabBody />
         </table>
       </div>
     </>
