@@ -44,8 +44,8 @@ export default function TabBody() {
     });
 
   return (
-    <table>
+    <tbody>
       {tabBody}
-    </table>
+    </tbody>
   );
 };
