@@ -1,11 +1,10 @@
-export default function TabBody() {
-  const now = new Date(2017, 2, 8);
+export default function TabBody({now}) {
   const allMonthDays = [];
   const firstMonthDay = new Date(now.getFullYear(), now.getMonth(), 1);
 
   for (let i = 0; i < 42; i++) {
     allMonthDays[i] = new Date(firstMonthDay);
-    allMonthDays[i].setDate(firstMonthDay.getDate() - 2 + i);
+    allMonthDays[i].setDate(firstMonthDay.getDate() - (firstMonthDay.getDay() - 1) + i);
 
   };
 
