@@ -11,7 +11,7 @@ export default function Calendar({date}) {
 
   return (
     <>
-      <div className="ui-datepicker">
+      <div className="ui-datepicker" data-testid='datepicker'>
         <div className="ui-datepicker-material-header">
           <div className="ui-datepicker-material-day">{dayNames[weekday]}</div>
           <div className="ui-datepicker-material-date">

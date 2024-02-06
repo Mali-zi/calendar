@@ -1,7 +1,7 @@
 import './App.css';
 import Calendar from './Calendar.js'
 
-const now = new Date(2023, 5, 12);
+const now = new Date();
 
 function App() {
   return (
